@@ -3,27 +3,36 @@
 <head lang="en">
     <meta charset="UTF-8">
     <title>Directores</title>
+
+    <!--Cargo estilos  Boostrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
 </head>
 <body>
 
 <div class="container">
-    <div class="btn-group">
-        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-            Desplegar <span class="caret"></span>
-        </button>
-        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-            <li><a ui-sref="menu">Menu</a></li>
-            <li><a ui-sref="agregar">Agregar director</a></li>
-            <li> <a ui-sref="consultar">Consultar director</a></li>
-        </ul>
+    <ul class="nav nav-tabs">
+            <li role="presentation"><a ui-sref="inicio">Inicio</a></li>
+            <li role="presentation"><a ui-sref="agregar">Agregar director</a></li>
+            <li role="presentation"> <a ui-sref="consultar">Consultar director</a></li>
 
-
-    </div>
+    </ul>
 </div>
+
 <div ui-view></div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.min.js"></script>
 <script src="scripts/app.js"></script>
+    <!--cargo controladores-->
+    <script src="scripts/controllers/agregarController.js/"></script>
+    <script src="scripts/controllers/consultarController.js"></script>
+
+    <!-- Cargo directive-->
+    <script src="scripts/directives/elementoDirector.js"></script>
+    <script src="scripts/directives/elementoConsulta.js"></script>
+
+
+
 </body>
 </html>

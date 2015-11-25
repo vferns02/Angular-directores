@@ -7,5 +7,6 @@
     <orderEntry type="library" name="angular" level="application" />
     <orderEntry type="library" name="angular-ui-router" level="application" />
     <orderEntry type="library" name="ui-bootstrap-tpls" level="application" />
+    <orderEntry type="library" name="angular-local-storage" level="application" />
   </component>
 </module>

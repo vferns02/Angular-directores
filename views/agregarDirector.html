@@ -1,1 +1,46 @@
-<h1>Agregar Director</h1>
+<h2 style="margin: 5px 50px 0px">Agregar director</h2>
+<hr/>
+
+
+<div ng-controller="agregarCtrl">
+    <form class="form-inline" style="margin: 5px 50px 5px">
+        <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" class="form-control" id="nombre" placeholder="Steven" ng-model="nuevoDirector.nombre">
+        </div>
+        <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" class="form-control" id="apellido" placeholder="Spielberg" ng-model="nuevoDirector.apellido">
+            <label for="nacimiento">Fecha de nacimiento</label>
+            <input type="text" class="form-control" id="nacimiento" placeholder="18/12/1946" ng-model="nuevoDirector.nacimiento">
+        </div>
+        <br/>
+        <label for="pelicula">Nombre de Pelicula: </label>
+        <input type="text" class="form-control" id="pelicula" placeholder="Tiburón" ng-model="nuevoDirector.pelicula"/>
+        <br/>
+        <textarea class="form-control" name="sinopsis" id="sinopsis" cols="60" rows="10" placeholder="Sinopsis" ng-model="nuevoDirector.sinopsis"></textarea><br/>
+        <label for="borrar"></label> <input id="borrar" type="reset" value="Borrar formulario"/>
+        <button ng-click="agregar()">Guardar registro</button>
+    </form>
+    <hr/>
+
+    <table class="table table-bordered">
+        <thead>
+        <tr>
+            <th> Nombre</th>
+            <th> Apellidos </th>
+            <th> Nacimiento</th>
+            <th> Pelicula</th>
+            <th> Sinopsis</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="director in directores| orderBy:'nombre'"
+            elemento-director
+            director="director" >
+
+        </tr>
+        </tbody>
+    </table>
+    <div ui-view></div>
+</div>

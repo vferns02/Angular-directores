@@ -1,13 +1,16 @@
 angular.module("directores",['ui.router']);
 
+
+
 angular.module("directores").config(function($stateProvider, $urlRouterProvider){
+
 
     $urlRouterProvider.otherwise("/menu");
 
     $stateProvider
-        .state("menu",{
-            url:"/menu",
-            templateUrl:"views/menu.html"
+        .state("inicio",{
+            url:"/inicio",
+            templateUrl:"views/inicio.html"
         })
         .state("agregar",{
             url:"/agregar",

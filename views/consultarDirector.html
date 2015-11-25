@@ -1,1 +1,20 @@
 <h1>Consultar Directores</h1>
+
+<div ng-controller="consultarCtrl">
+<table class="table table-bordered">
+    <thead>
+    <tr>
+        <th> Nombre</th>
+        <th> Apellidos </th>
+        <th> Nacimiento</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr ng-repeat="director in directores| orderBy:'nombre'"
+        elemento-consulta
+        director="director" >
+
+    </tr>
+    </tbody>
+</table>
+</div>
