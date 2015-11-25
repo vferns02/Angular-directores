@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="JavaScriptLibraryMappings">
+    <file url="file://$PROJECT_DIR$/index.html" libraries="{angular-ui-router, ui-bootstrap-tpls}" />
+    <file url="file://$PROJECT_DIR$/scripts/app.js" libraries="{angular, angular-ui-router}" />
+    <file url="file://$PROJECT_DIR$/scripts/controllers/agregarController.js" libraries="{angular}" />
+  </component>
+</project>
