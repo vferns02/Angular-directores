@@ -23,7 +23,7 @@ angular.module("directores").controller("consultarCtrl",function($scope) {
         apellido: "Walter Burton",
         nacimiento: "25/08/1958",
         pelicula: "Pesadilla antes de navidad",
-        sinopsis: "ack Skellington, el aburrido rey de Halloweentown, intenta apoderarse de la temporada" +
+        sinopsis: "Jack Skellington, el aburrido rey de Halloweentown, intenta apoderarse de la temporada" +
         " navideña para variar un poco. Ignorando los consejos de Sally, la solitaria muñeca de trapo " +
         "que oculta sus sentimientos por él, Jack recluta a tres pícaros personajes, para que lo ayuden a " +
         "secuestrar a Santa Claus."

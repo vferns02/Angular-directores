@@ -5,7 +5,7 @@ angular.module("directores",['ui.router']);
 angular.module("directores").config(function($stateProvider, $urlRouterProvider){
 
 
-    $urlRouterProvider.otherwise("/menu");
+    $urlRouterProvider.otherwise("/inicio");
 
     $stateProvider
         .state("inicio",{
@@ -19,7 +19,11 @@ angular.module("directores").config(function($stateProvider, $urlRouterProvider)
         .state("consultar",{
             url:"/consultar",
             templateUrl:"views/consultarDirector.html"
-        });
+        })
+        .state("consultar.detalles",{
+            url:"/detalle",
+            templateUrl:"views/detallesConsulta.html"
+        })
 
 });
 

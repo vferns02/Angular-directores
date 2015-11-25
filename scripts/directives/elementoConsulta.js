@@ -9,8 +9,7 @@ angular.module("directores").directive("elementoConsulta", function (){
 
         //Con scope establecemos la interfaz de comunicacion
         scope:{
-            director: "=" //Con = establecemos enlace bidireccional.
-
+            director: "=" ,//Con = establecemos enlace bidireccional.
 
 
         }
